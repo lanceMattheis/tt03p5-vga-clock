@@ -10,6 +10,9 @@ module tt_um_vga_clock (
     input  wire       rst_n
 );
 
+    assign uio_oe = 0;
+    assign uio_out = 0;
+
     vga_clock vga_clock (
     .clk        (clk), 
     .reset_n    (rst_n),
